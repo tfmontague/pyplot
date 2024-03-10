@@ -7524,8 +7524,21 @@ Make sure your bar plot has the bars labelled correctly (with the character it r
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create and activate a Python virtual environment. </span>
+<span class="c1"># Before starting the project, try all these imports FIRST</span>
+<span class="c1"># Address any errors you get running this code cell </span>
+<span class="c1"># by installing the necessary packages into your active Python environment.</span>
+<span class="c1"># Try to resolve issues using your materials and the web.</span>
+<span class="c1"># If that doesn't work, ask for help in the discussion forums.</span>
+<span class="c1"># You can't complete the exercises until you import these - start early! </span>
+<span class="c1"># We also import Counter and randint (included in the Python Standard Library).</span>
+
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'All prereqs installed.'</span><span class="p">)</span>
+<span class="o">!</span>pip<span class="w"> </span>list
 
 <span class="n">TEXT</span> <span class="o">=</span> <span class="s2">"At three o’clock precisely I was at Baker Street, but Holmes had not yet returned. The landlady informed me that he had left the house shortly after eight o’clock in the morning. I sat down beside the fire, however, with the intention of awaiting him, however long he might be. I was already deeply interested in his inquiry, for, though it was surrounded by none of the grim and strange features which were associated with the two crimes which I have already recorded, still, the nature of the case and the exalted station of his client gave it a character of its own. Indeed, apart from the nature of the investigation which my friend had on hand, there was something in his masterly grasp of a situation, and his keen, incisive reasoning, which made it a pleasure to me to study his system of work, and to follow the quick, subtle methods by which he disentangled the most inextricable mysteries. So accustomed was I to his invariable success that the very possibility of his failing had ceased to enter into my head."</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 <span class="n">letter_freq</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">TEXT</span><span class="p">))</span>
@@ -7564,6 +7577,52 @@ Make sure your bar plot has the bars labelled correctly (with the character it r
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>All prereqs installed.
+Package           Version
+----------------- -----------
+asttokens         2.4.1
+colorama          0.4.6
+comm              0.2.1
+contourpy         1.2.0
+cycler            0.12.1
+debugpy           1.8.1
+decorator         5.1.1
+executing         2.0.1
+fonttools         4.49.0
+ipykernel         6.29.3
+ipython           8.22.2
+jedi              0.19.1
+jupyter_client    8.6.0
+jupyter_core      5.7.1
+kiwisolver        1.4.5
+matplotlib        3.8.3
+matplotlib-inline 0.1.6
+nest-asyncio      1.6.0
+numpy             1.26.4
+packaging         23.2
+parso             0.8.3
+pillow            10.2.0
+pip               24.0
+platformdirs      4.2.0
+prompt-toolkit    3.0.43
+psutil            5.9.8
+pure-eval         0.2.2
+Pygments          2.17.2
+pyparsing         3.1.2
+python-dateutil   2.9.0.post0
+pywin32           306
+pyzmq             25.1.2
+six               1.16.0
+stack-data        0.6.3
+tornado           6.4
+traitlets         5.14.1
+wcwidth           0.2.13
+</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
